@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Upload image to sm.ms
 // @namespace    http://tampermonkey.net/
-// @version      1.1.20180409
+// @version      1.2.20180409
 // @description  上传图片到图床（附件服务无法继续使用的解决办法xD
 // @author       杯杯杯杯具@TJUPT
 // @match        https://tjupt.org/*
@@ -13,7 +13,7 @@
     'use strict';
     var API_URL = "https://sm.ms/api/upload";
     // 判断是否有BBCode编辑器，并添加上传图片行
-    if($("textarea").length > 0){
+    if($("textarea").length > 0 & $("textarea#quickreplytext").length == 0){
         $("textarea").parent().parent().before("<tr><td align=\"left\" colspan=\"2\"><input type=\"file\" class=\"file\" id=\"uimg\" name=\"img\"><input id=\"uploadimg\" type=\"button\" class=\"btn\" value=\"上传图片\"></td></tr>");
         // 点击事件
         $("#uploadimg").click(function (){
