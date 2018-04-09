@@ -6,6 +6,8 @@
 // @author       杯杯杯杯具@TJUPT
 // @match        https://tjupt.org/*
 // @match        https://www.tjupt.org/*
+// @exclude.     https://tjupt.org/invite.php*
+// @exclude      https://www.tjupt.org/invite.php*
 // @updateURL    https://github.com/tongyifan/TJUPT-UserScript/raw/master/upload-image.user.js
 // ==/UserScript==
 
