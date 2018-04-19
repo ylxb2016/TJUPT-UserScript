@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Upload image to sm.ms
 // @namespace    http://tampermonkey.net/
-// @version      1.5.20180419
+// @version      1.6.20180420
 // @description  上传图片到图床（附件服务无法继续使用的解决办法xD
 // @author       杯杯杯杯具@TJUPT
 // @match        https://tjupt.org/*
@@ -9,6 +9,7 @@
 // @exclude      https://*tjupt.org/invite.php*
 // @exclude      https://*tjupt.org/userdetails.php*
 // @exclude      https://*tjupt.org/usercp.php*
+// @exclude      https://*tjupt.org/addcss.php*
 // @updateURL    https://github.com/tongyifan/TJUPT-UserScript/raw/master/upload-image.user.js
 // ==/UserScript==
 
