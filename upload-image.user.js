@@ -8,6 +8,7 @@
 // @match        https://www.tjupt.org/*
 // @exclude      https://*tjupt.org/invite.php*
 // @exclude      https://*tjupt.org/userdetails.php*
+// @exclude      https://*tjupt.org/usercp.php*
 // @updateURL    https://github.com/tongyifan/TJUPT-UserScript/raw/master/upload-image.user.js
 // ==/UserScript==
 
