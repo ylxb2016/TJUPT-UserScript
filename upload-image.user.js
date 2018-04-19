@@ -10,6 +10,7 @@
 // @exclude      https://*tjupt.org/userdetails.php*
 // @exclude      https://*tjupt.org/usercp.php*
 // @exclude      https://*tjupt.org/addcss.php*
+// @exclude      https://*tjupt.org/settings.php*
 // @updateURL    https://github.com/tongyifan/TJUPT-UserScript/raw/master/upload-image.user.js
 // ==/UserScript==
 
