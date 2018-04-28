@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Upload image to sm.ms
 // @namespace    http://tampermonkey.net/
-// @version      1.6.20180420
+// @version      1.7.20180428
 // @description  上传图片到图床（附件服务无法继续使用的解决办法xD
 // @author       杯杯杯杯具@TJUPT
 // @match        https://tjupt.org/*
@@ -10,7 +10,6 @@
 // @exclude      https://*tjupt.org/userdetails.php*
 // @exclude      https://*tjupt.org/usercp.php*
 // @exclude      https://*tjupt.org/addcss.php*
-// @exclude      https://*tjupt.org/settings.php*
 // @updateURL    https://github.com/tongyifan/TJUPT-UserScript/raw/master/upload-image.user.js
 // ==/UserScript==
 
@@ -47,6 +46,7 @@
                         var position = start + imgBBCode.length;
                         $("textarea").focus();
                         txtArea.setSelectionRange(position, position);
+                        $("#uimg").val("");
                     }else{
                         alert(data.msg);
                     }
@@ -57,4 +57,7 @@
             });
         });
     }
+    $("#qr").click(function(){
+        $("#uimg").val("");
+    });
 })();
